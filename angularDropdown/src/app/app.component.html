@@ -1,0 +1,8 @@
+<sbb-form-field style="margin: 500px 0 500px 0">
+  <input sbbInput type="text" [formControl]="myControl" [sbbAutocomplete]="auto" />
+</sbb-form-field>
+<sbb-autocomplete #auto="sbbAutocomplete">
+  <sbb-option *ngFor="let option of filteredOptions" [value]="option">
+    {{ option }}
+  </sbb-option>
+</sbb-autocomplete>
